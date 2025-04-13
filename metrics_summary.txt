@@ -1,0 +1,8 @@
+Exact Match Rate        : 58.98%
+Average BLEU‑4          : 63.56
+SacreBLEU (corpus)      : 69.61
+Avg. Sentence CodeBLEU  : 64.07
+Average Token F1        : 0.78
+Average Token Precision : 0.80
+Average Token Recall    : 0.79
+Average Length Diff     : 1.26 tokens
