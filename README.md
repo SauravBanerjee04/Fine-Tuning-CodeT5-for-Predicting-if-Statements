@@ -10,6 +10,7 @@ All files live at the repository root:
 ├── ft_valid.csv                   # Validation dataset (5,000 samples)
 ├── ft_test.csv                    # Test dataset (5,000 samples)
 ├── FineTune_CodeT5.ipynb          # Jupyter notebook with all steps
+├── FineTune_CodeT5.pdf          # PDF Version of Jupyter notebook with all steps
 ├── Fine-Tune_CodeT5 Lab Description.pdf  # Assignment description
 │   codet5_finetuned_gpu/      # Saved model and checkpoints
 │   testset-results.csv        # Test predictions & metrics CSV
