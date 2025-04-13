@@ -11,10 +11,10 @@ All files live at the repository root:
 ├── ft_test.csv                    # Test dataset (5,000 samples)
 ├── FineTune_CodeT5.ipynb          # Jupyter notebook with all steps
 ├── Fine-Tune_CodeT5 Lab Description.pdf  # Assignment description
-├── outputs/                       # Directory for model checkpoints and results
-│   ├── codet5_finetuned_gpu/      # Saved model and checkpoints
-│   ├── testset-results.csv        # Test predictions & metrics CSV
-│   └── metrics_summary.txt        # Summary of evaluation metrics
+│   codet5_finetuned_gpu/      # Saved model and checkpoints
+│   testset-results.csv        # Test predictions & metrics CSV
+│   metrics_summary.txt        # Summary of evaluation metrics
+|   Fine_Tune_CodeT5 Writeup.pdf # Write up for lab
 └── README.md                      # This file
 ```
 
@@ -23,8 +23,8 @@ All files live at the repository root:
 2. **Select GPU runtime**: In Colab, go to **Runtime > Change runtime type** and choose **GPU**.
 3. **Clone the repository**:
    ```bash
-   !git clone <your-repo-url>
-   %cd <your-repo-directory>
+   !git clone <https://github.com/SauravBanerjee04/Fine-Tuning-CodeT5-for-Predicting-if-Statements.git>
+   %cd <Fine-Tuning-CodeT5-for-Predicting-if-Statements>
    ```
 4. **Upload data**: Ensure `ft_train.csv`, `ft_valid.csv`, and `ft_test.csv` are in the notebook’s working directory (either by cloning or uploading via the Colab UI).
 5. **Run all cells**: Use **Runtime > Run all** to execute the notebook end-to-end.
@@ -84,11 +84,7 @@ All files live at the repository root:
   - **Average Length Difference** between predictions and references
 - Prints each metric and writes them to `outputs/metrics_summary.txt`.
 
-## Reproducing the Workflow Automatically
-In Colab, after cloning the repo, you can execute the notebook headlessly:
-```bash
-!jupyter nbconvert --execute --to notebook --inplace FineTune_CodeT5.ipynb
-```
+
 
 ## Tips
 - If you run out of GPU memory, reduce `per_device_train_batch_size` in Cell 5.
